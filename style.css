@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white
+}
+body,html{
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    overflow-x: hidden;
+    scroll-padding: -10px;
+}
+footer a:hover{
+    color:rgba(250, 39, 239, 0.938);
+}
+
+ul{
+    list-style: none;
+}
+li:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-family: 'Alata', sans-serif;
+}
+/* ================================================== SECTION 1 ================================================ */
+.wrapperr{
+    width:90%;
+    margin:0 auto;
+    padding:4rem 2rem 4rem 2rem;
+}
+.wrapper{
+    width:90%;
+    margin:0 auto;
+    padding:4rem 2rem 4rem 2rem;
+}
+#section1{
+    background-image: url("images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height:100vh;
+}
+#section1 nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#section1 h2{
+    width:50%;
+    margin-right: auto;
+    font-size: 2rem;
+}
+#section1 nav ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+}
+#section1 nav ul li{
+    padding:.8rem 1.25rem;
+    font-weight: 600;
+}
+#section1 nav ul li:hover{
+   border-bottom: 2px solid white;
+   cursor: pointer;
+}
+#section1 .sec1-box{
+    border:2px solid white;
+    padding: clamp(.3rem,3vw,3rem);
+    width:55%;
+    margin-top: 7rem;
+}
+#section1 h1{
+    font-size: clamp(2.8rem, 5vw,5rem);
+    text-transform: uppercase;
+}
+
+/* ================================================== SECTION 2 ================================================ */
+#section2{
+    display:flex;
+    padding-top: clamp(1rem, 3vw, 3rem);
+}
+#section2 .content{
+    display:flex;
+}
+#section2 p,#section2 h1,#section3 h1{
+    color:black;
+}
+#section2 .sec2-box2{
+    padding:4rem;
+    background-color: white;
+    margin-top: 170px;
+    margin-left: -150px;
+}
+#section2 .sec2-box2 h1,#section3 .sec3-box h1{
+    text-transform: uppercase;
+    font-size: clamp(2.5rem, 3.7vw,3.7rem);
+    margin-bottom:1.5rem;
+}
+#section2 .sec2-box2 p{
+    color:dimgray;
+    font-weight: 500;
+    font-size: clamp(1rem, 1.2vw,1.2rem);
+    line-height:1.6;
+    font-family: 'Alata', sans-serif;
+}
+
+/* ================================================== SECTION 3 ================================================ */
+#section3 .sec3-box{
+    display:flex;
+    flex-direction: row;
+}
+#section3 .sec3-box h1{
+    flex:1;
+}
+#section3 .sec3-box a{
+    color:black;
+    text-align: center;
+    font-weight: 500;
+    padding:.5rem 2rem;
+    letter-spacing: .3rem;
+    font-family: 'Alata', sans-serif;
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 10px;
+}
+#section3 .sec3-box a:hover{
+    color:white;
+    border: 2px solid lightgray;
+    background-color: black;
+}
+
+#section3 .sec3-box2{
+    margin-top: 4rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.2rem;
+}
+#section3 .pic{
+    width: 23.7%;
+    position:relative;
+    background-color: black;
+    cursor: pointer;
+}
+#section3 .sec3-box2 h2{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: clamp(1.5rem, 2.5vw,2.5rem);
+    padding: 40px;
+}
+#section3 .pic img{
+    opacity:0.7;
+    transition: opacity .3s ease;
+    object-fit: fill;
+    height:100%;
+    width:100%;
+}
+#section3 .pic:hover img{
+    opacity:1;
+}
+/* ================================================== FOOTER ================================================ */
+footer{
+    min-height:100px;
+    background-color: black;
+    display:flex;
+    flex-direction: row;
+    padding:2rem 6.5rem;
+}
+footer .foot{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    gap:1rem;
+    justify-content: center;
+}
+footer .foot ul{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+}
+footer .foot:last-child{
+    align-items: flex-end;
+}
+footer img{
+    width:20px;
+}
+footer p{
+    color: gray;
+}
+/* ============================================ FRONTEND MENTOR COPYRIGHT ========================================= */
+.attribution { 
+    background-color: rgba(0, 0, 0, 0.911);
+    padding:7px;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: lightblue; 
+}
+
+/* ================================================== HAMBURGER ================================================ */
+.toggle-button{
+    position:absolute;
+    top: 4.5rem;
+    cursor: pointer;
+    right:2rem;
+    border:0;
+    background-color: transparent;
+    opacity: 0.9;
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height:21px;
+}
+.toggle-button .bar{
+    height:3px;
+    width:100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ================================================== MEDIA QUERY ================================================ */
+@media (max-width:900px){
+    .wrapperr{
+        width:100%;
+    }
+    img{
+        width:100%;
+    }
+    /* ================================= BURGER ANIMATION ============================== */
+    .toggle-button{
+        display:flex;
+    }
+    .toggle-button span:nth-child(1){
+        transform:translate(0, 0) rotate(0deg);
+        transition: 500ms ease;
+    }
+    .toggle-button span:nth-child(2){
+        transform:translateX(0);
+        transition: 900ms ease;
+    }
+    .toggle-button span:nth-child(3){
+        transform:translate(0, 0) rotate(0deg);
+        transition: 500ms ease;
+    }
+    .toggle-button:hover span:nth-child(2){
+        transform:translateX(-10px);
+        background-color:rgba(250, 39, 239, 0.938);
+        transition: 500ms ease;
+    }
+    .toggle-button.is-active span:nth-child(1){
+        transform:translate(2px, 6px) rotate(45deg);
+        transition: 500ms ease;
+    }
+    .toggle-button.is-active span:nth-child(2){
+        transform:translate(100px);
+        transition: 500ms ease;
+    }
+    .toggle-button.is-active span:nth-child(3){
+        transform:translate(1.8px, -12px) rotate(-45deg);
+        transition: 500ms ease;
+    }
+    /* ================================= SECTION 1 ============================== */
+    #section1 nav h2{
+        position:absolute;
+        top:4rem;
+        left:2rem;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    /* ========= CHANGING BURGER BG TO BLACK ========= */
+    .otherbar{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+        background-color: black;
+    }
+    #section1 .navbar-links{
+        display:none;
+        width:100%;
+    }
+    #section1 .navbar-links ul{
+        flex-direction: column;
+        width:100%;
+    }
+    #section1 .navbar-links li{
+        width:100%;
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        padding-left: 2.2rem;
+    }
+    #section1 .navbar-links li:hover {
+        background-color: rgba(128, 128, 128, 0.281);
+        border-bottom: none;
+    }
+    #section1 .navbar-links li:hover a{
+        color:rgba(250, 39, 239, 0.938);
+    }
+    #section1 .navbar-links.active{
+        display: flex;
+        position:absolute;
+        top:7rem;
+        left:0;
+        height:80%;
+        width:100%;
+    } 
+    #section1{
+        background-position-x: center;
+    }
+    #section1 .sec1-box{
+        margin-top: 50%;
+        width:100%;
+    }
+
+    /* ================================= SECTION 2 ============================== */
+    #section2 .content{
+        flex-direction: column;
+    }
+    #section2 .sec2-box2{
+        margin:0;
+        width:100%;
+        text-align: center;
+        padding:2rem;
+    }
+    
+    /* ================================= SECTION 3 ============================== */
+    #section3 .sec3-box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+    }
+    #section3 .pic{
+        width:100%;
+        height:170px;
+    }
+    #section3 .pic img{
+        object-fit: cover;
+        object-position: top;
+        opacity:0.5;
+    }
+    #section3 .wrapper{
+        position:relative;
+    }
+    #section3 .btn{
+        position:absolute;
+        bottom:0;
+    }
+    #section3 .sec3-box h1{
+        margin-bottom:0;
+        text-align: center;
+    }
+
+    /* ================================= FOOTER ============================== */
+    footer{
+        flex-direction: column;
+        gap:1.6rem;
+        margin-top: 9rem;
+    }
+    footer .foot:first-child ul{
+        flex-direction: column;
+        line-height: 1.8;
+    }
+    footer .foot li{
+        text-align: center;
+    }
+    footer .foot{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .foot:last-child{
+        align-items: center;
+    }
+    footer p{
+        text-align: center;
+    }
+}
