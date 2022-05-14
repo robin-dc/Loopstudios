@@ -29,16 +29,12 @@ h2{
     font-family: 'Alata', sans-serif;
 }
 /* ================================================== SECTION 1 ================================================ */
-.wrapperr{
+.wrapperr, .wrapper{
     width:90%;
     margin:0 auto;
-    padding:4rem 2rem 4rem 2rem;
+    padding:4rem 2rem;
 }
-.wrapper{
-    width:90%;
-    margin:0 auto;
-    padding:4rem 2rem 4rem 2rem;
-}
+
 #section1{
     background-image: url("images/desktop/image-hero.jpg");
     background-size: cover;
@@ -59,7 +55,7 @@ h2{
     display:flex;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width:100%;
 }
 #section1 nav ul li{
     padding:.8rem 1.25rem;
@@ -73,10 +69,11 @@ h2{
     border:2px solid white;
     padding: clamp(.3rem,3vw,3rem);
     width:55%;
+    min-width: 300px;
     margin-top: 7rem;
 }
 #section1 h1{
-    font-size: clamp(2.8rem, 5vw,5rem);
+    font-size: clamp(2.7rem, 5vw,5rem);
     text-transform: uppercase;
 }
 
@@ -230,6 +227,7 @@ footer p{
 @media (max-width:900px){
     .wrapperr{
         width:100%;
+        padding:4rem 1.2rem 4rem 1.2rem;
     }
     img{
         width:100%;
@@ -324,6 +322,10 @@ footer p{
     }
 
     /* ================================= SECTION 2 ============================== */
+    #section2 .wrapper{
+        padding:1rem;
+        width:100%;
+    }
     #section2 .content{
         flex-direction: column;
     }
@@ -374,7 +376,8 @@ footer p{
     }
     footer .foot li{
         text-align: center;
-    }
+        margin: 0 .5rem;
+    } 
     footer .foot{
         flex-direction: column;
         align-items: center;
